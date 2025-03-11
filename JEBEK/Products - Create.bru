@@ -1,0 +1,23 @@
+meta {
+  name: Products - Create
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{uri}}/api/products
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: 3|wzb7gdhjoMcTqdxIGK165E8nxFI9vBml9UGEcnDIf6571940
+}
+
+body:json {
+  {
+    "name": "product 1",
+    "price": 10.0,
+    "stock": 10
+  }
+}
